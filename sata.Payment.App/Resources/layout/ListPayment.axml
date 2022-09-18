@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	  <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relativeLayout4"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linList">
+           <!-- <include
+                android:id="@+id/headerView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                layout="@layout/Header" />-->
+		
+            <ListView
+                android:id="@+id/liPayment"
+                android:layout_width="fill_parent"
+                android:choiceMode="singleChoice"
+				android:clickable="true"
+                android:scrollingCache="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="fill_parent"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollIndicators="right"
+                android:scrollbarSize="20dp" />
+        </LinearLayout>
+		<include
+            android:id="@+id/FooterView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/FooterView"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

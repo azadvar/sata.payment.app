@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+	 <ImageView
+            android:src="@mipmap/satalogo"
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp" />
+		
+	<TextView android:text="مبلغ قابل پرداخت "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblAmount"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"/>
+	<EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAmount"
+        android:layout_marginTop="10dp"
+        android:maxLength="11"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="center"
+		android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:backgroundTint="#ffffffff"
+        android:hint="کد ملی"
+        android:textIsSelectable="false" />
+	<TextView
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtError"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:textColor="#e8761a" />
+	<RelativeLayout android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal">
+		<Button
+        android:text="پرداخت"
+        android:id="@+id/btnPay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+		android:textSize="30dp"
+        android:background="#047cc1"
+        android:backgroundTint="#047cc1"
+        android:textColor="@android:color/white" />
+		<Button android:text="انصراف"
+			android:id="@+id/btnCancel"
+			android:layout_marginRight="20dp"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textSize="30dp"
+			android:background="#047cc1"
+			android:backgroundTint="#047cc1"
+			android:textColor="@android:color/white"
+			android:layout_toLeftOf="@id/btnPay"/>
+		</RelativeLayout>
+	
+</LinearLayout>

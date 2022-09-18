@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:id="@+id/tableLayout1">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c0c0c0">
+        <TextView
+            android:text="مانده"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="#c0c0c0"
+            android:id="@+id/lblRmnamn "
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="مبلغ سهم بیمار"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="#c0c0c0"
+            android:id="@+id/lblPntamn"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="تاریخ بستری"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="#c0c0c0"
+            android:id="@+id/lblDate"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="عنوان"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="#c0c0c0"
+            android:id="@+id/lblTitle"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/lblRow"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="ردیف"
+            android:textStyle="bold"
+            android:background="#c0c0c0"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+       
+    </TableRow>
+</TableLayout>
